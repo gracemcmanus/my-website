@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Webpage</title>
+<meta charset="UTF-8">
+<meta name="description" content="McManus family web site">
+<meta name="keywords" content="McManus,family,pictures,history">
+<meta name="author" content="Grace McManus">
+<style>
+div.container {
+    width: 90%;
+    border: 5px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: turquoise;
+    clear: left;
+    text-align: center;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+body {background-color: powderblue;}
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    background-color: #f1f1c1;
+    width: 300px;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+td {
+    color: purple;
+}
+section.topic {
+    margin: 5px;
+    max-width: 500px;
+    background-color: pink;
+}
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+div.paragraph {
+    margin: 5px;
+    max-width: 300px;
+    background-color: black;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+   <h1>Grace's Home Page</h1>
+</header>
+<section>
+<article>
+<h1>JavaScript Can <span style="color:gold">Change</span> Images</h1>
+
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the light bulb to turn on/off the light.</p>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "C:/Users/grace.mcmanus/Desktop/pic_bulboff.gif";
+    } else {
+        image.src = "C:/Users/grace.mcmanus/Desktop/pic_bulbon.gif";
+    }
+}
+</script>
+</article>
+<br>
+<article>
+<h2 style="color:turqoise">Cimarron Colorado</h2>
+<img src="CO_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+</article>
+</section>
+<br>
+<section class="topic">
+<button type="button"
+onclick="document.getElementById('demo2').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo2">This paragraph will display the date.</p>
+</section>
+
+<button type="button" onclick="alert('Hello Me!')">Say Hello</button>
+<br>
+<h2>JavaScript can change the content of an HTML element:</h2>
+
+<button type="button" onclick="myFunction1()">Click To change Paragraph Text</button>
+
+<p id="demo3">This is a demonstration.</p>
+
+<script>
+function myFunction1() {
+    document.getElementById("demo3").innerHTML = "Javascript changed this paragraph text";
+    document.getElementById("demo3").style.fontSize = "25px";
+    document.getElementById("demo3").style.color = "blue";
+}
+</script>
+<br>
+<form>
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<br><br>
+<input type="submit"> Submit drop down data</input>
+</form>
+<br>
+<br>
+<form novalidate>
+<label for="email">Email:</label>
+<input type="email" name="email" value="grace.mcmanus">
+<input type="submit" value="Submit">
+</form>
+<br>
+
+<div class="paragraph">
+  <p style="color:orange;" id="test1">The getElementById() method returns the element that has the ID attribute with the specified value.</p>
+</div>
+<div class="paragraph">
+  <p style="color:green;" id="test2">It is used almost every time you want to manipulate, or get info from, an element on your document.</p>
+</div>
+<div class="paragraph">
+  <p style="color:purple;" id="test3">Click the button to change the color of one of these paragraphs.</p>
+</div>
+<br>
+<br>
+  <button onclick="myFunction()" width="35" height="50" style="font-size:25px;background-color:lightblue">Try it</button>
+<br>
+<h3> Try it Yourself </h3>
+<br>
+<script>
+function myFunction() {
+    var x = document.getElementById("test3");
+    x.style.color = "blue";
+    x.style.border = "1px solid blue";
+    x.style.padding = "40px";
+    x.innerHTML = "Javascript changed this!";
+}
+</script>
+<br>
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+
+
+<div class="container">
+
+<article>
+  <h1>Family Tree</h1>
+
+</article>
+
+</div>
+
+<br>
+<article>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+</tr>
+<tr>
+    <td>Grace</td>
+    <td>McManus</td>
+    <td>54</td>
+  </tr>
+<tr>
+    <td>Bernie</td>
+    <td>McManus</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Becky</td>
+    <td>McManus</td>
+    <td>24</td>
+  </tr>
+</table>
+</article>
+<br>
+<article>
+<h2>Unordered List</h2>
+<ul>
+	<li>Apples</li>
+	<li>Oranges</li>
+	<li>Bananas</li>
+</ul>
+<h2>Ordered List</h2>
+<ol>
+	<li>Breakfast</li>
+	<li>Lunch</li>
+	<li>Dinner</li>
+</ol>
+</article>
+<footer>
+<p>Copyright &copy; gracejmc.com</p>
+<p>Contact information: <a href="mailto:grace.mcmanus@verizon.net">
+  grace.mcmanus@verizon.net</a>.</p>
+</footer>
+<br>
+
+</body>
+</html>
