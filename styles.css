@@ -1,0 +1,55 @@
+div.container {
+    width: 90%;
+    border: 5px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: turquoise;
+    clear: left;
+    text-align: center;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+body {background-color: powderblue;}
+table, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    background-color: #f1f1c1;
+    width: 300px;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+td {
+    color: purple;
+}
+section.topic {
+    margin: 5px;
+    max-width: 500px;
+    background-color: pink;
+}
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+div.paragraph {
+    margin: 5px;
+    max-width: 300px;
+    background-color: black;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
