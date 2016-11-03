@@ -39,6 +39,7 @@ function changeImage() {
 
 </article>
 </section>
+
 <br>
 <section class="topic">
 <button type="button"
@@ -108,7 +109,22 @@ function myFunction() {
   <input type="text" name="lastname">
 </form>
 
+<h1 style="color:blue";> Google Maps API (Application Programming Interface)</h1>
+<h2 style="color:purple";> It is added to the website with a script tag  https:</h2>
+<h2 style="color:orange";> My Home</h2>
 
+<div id="map" style="width:75%;height:450px"> </div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(39.538177, -76.387669);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
 
 <div class="container">
 
