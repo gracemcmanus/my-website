@@ -16,7 +16,14 @@ article {
     padding: 1em;
     overflow: hidden;
 }
-body {background-color: powderblue;}
+body {
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+    background-color: turquoise;
+}
+
 table, th, td {
     border: 2px solid blue;
     border-collapse: collapse;
